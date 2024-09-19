@@ -10,7 +10,8 @@
 	<table style="border: 1px solid black; border-collapse: collapse;">
 		<tr>
 			<?php
-				for($i = 65; $i <=72; $i++){	
+				$numero=7;
+				for($i = 65; $i <=$numero+65; $i++){	
 					$letter	= chr($i);			
 					echo "<td style='border: 1px solid black; border-collapse: collapse;'> $letter </td>";
 				}
@@ -21,7 +22,7 @@
 
 		<tr>
 			<?php
-				for($i = 0; $i <=7; $i++){			
+				for($i = 0; $i <=$numero; $i++){			
 					echo "<td style='border: 1px solid black; border-collapse: collapse;'> $i </td>";
 				}
 
