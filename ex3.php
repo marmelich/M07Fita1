@@ -8,27 +8,19 @@
 <body>
 
 	<table style="border: 1px solid black; border-collapse: collapse;">
-		<tr>
-			<?php
-				$numero=7;
-				for($i = 65; $i <=$numero+65; $i++){	
-					$letter	= chr($i);			
-					echo "<td style='border: 1px solid black; border-collapse: collapse;'> $letter </td>";
+
+		<?php
+			$fila=5;
+			$columna=5;
+			for($i = 0; $i<=$fila; $i++){	
+				echo "<tr>";
+				for($j = 0; $j<=$columna; $j++){
+					$num=$i+$j;
+					echo "<td style='border: 1px solid black; border-collapse: collapse;'> $num </td>";
 				}
-
-			?>
-
-		</tr>
-
-		<tr>
-			<?php
-				for($i = 0; $i <=$numero; $i++){			
-					echo "<td style='border: 1px solid black; border-collapse: collapse;'> $i </td>";
-				}
-
-			?>
-
-		</tr>
+				echo "</tr>";
+			}
+		?>
 
 	</table>	
 
